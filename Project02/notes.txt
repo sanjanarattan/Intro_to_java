@@ -1,0 +1,34 @@
+Hufftest: I had my files directly in the code so I didnt have to type args evrytime and I played around with simple 
+phrases like "hi" and its coressponding huff with the end. I also added some special characters like ø to 
+figure out how the code would react. 
+
+-05/10:
+
+For encode I basically kept trying out different variations of short words lik hello into
+my input file and then added some funky characters like क as well. I then checked outtie.Once
+it seemed like the code was working, I added longer variations of my tests to check if it still worked and
+used the huffman tester to check if it was accurrate. I notice for my hindi characters the encode goes ahead and still matches it with a series of
+ascii characters. This may be due to my "continue" statements I added after each check. Unfortunatly, I did not have time to look into this further.
+
+As of now, decode is still work in progress. I got it to read something but the output is wrong,
+indicating there is something wrong with how I organized the tree. 
+
+05/11 update: 
+
+I realized my decode was not working becuase of how the code_map hashmap was organized and referencing the ascii value.
+I switched the values so that the huffman referrencees thee ascii and wallah! It worked. The way I debugged this
+as putting a bunch of print statements in the code and I made a smaller codebook so that it was eeasier to referreence. From there,
+I noticed my ascii values were completely off and realized the issue. I just pushed the fixed verrsion of decode!
+
+debugcb: Shortening the codebook was probably the most crucial part of my debugging process. Like I mentioned before, my debugging proceess mainly consisted of 
+print statemeents and printing out the original code book's hashmap and nodes resulted in a bunch of numbers I could not make sense of. By shortening the code
+book I as able to better trace ho the nodestings were being stored and if the huffman nodestring as rreferencing its coressponding ascii value corrrectly.
+Huge shoutout to my mom! I was complaining about how long the codebook was over dinner and she simply replied "make it short" hahaha. 
+
+I included all the files I used in project 02. You will notice the three txt files called intest (pure alaphabet input) outtie (huffman) and deco (decoder output).
+I decided to prename my output files and reuse them to keep my sanity when I went back into files to retrieve my output. It ould get hectic trying to come up
+ith new file names and looking for them after each test round. 
+
+Also I wanted to mention how I chose my test subjects. I have a hindi keyboard and I played around with mostly those charcters. Most of my 
+tests combined english letters and hindi letterrs because I wanted to make sure the code continued. I realize there are still errors with my code
+that I could not get to but my main focus was to eensurre the code continueed on and did not crash upon stumbling across an unindetifiablee characterr. 

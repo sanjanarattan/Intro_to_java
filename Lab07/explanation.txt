@@ -1,0 +1,3 @@
+The MyInt class can be changed after it is created because it has methods that allow its value to change for example set(). This means it is designed to be a mutable class.
+
+The Integer class,  cannot be changed after it is created.This makes it designed to be an immutable class.

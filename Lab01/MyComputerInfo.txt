@@ -1,0 +1,5 @@
+Disk Capacity: 237 GB SSD
+RAM: 12 GB Installed
+CPU: AMD Ryzen 5 3500U
+OS: Windows 10 Home
+Display: 1920*1080; 60 Hz
